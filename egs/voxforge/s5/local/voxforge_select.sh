@@ -7,7 +7,7 @@
 # and makes symbolic links to the respective recordings 
 
 # regex to select speakers based on pronunciation dialect
-dialect='(American)|(British)'
+dialect='(Indian)'
 
 # e.g. accept a "dialect" parameter
 . utils/parse_options.sh

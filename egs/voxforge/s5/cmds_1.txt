@@ -1,0 +1,63 @@
+    1  cd old-mnt/data/HBR/
+    2  cd kaldi/
+    3  cd egs/voxforge/s5/
+    4  vim sample_run.sh 
+    5  cd ../../../tools/
+    6  ll
+    7  vim install_srilm.sh 
+    8  vim INSTALL 
+    9  extras/check_dependencies.sh
+   10  sudo apt-get update
+   11  sudo apt-get install automake autoconf libtool subversion
+   12  extras/check_dependencies.sh
+   13  make
+   14  lll
+   15  ll
+   16  cd ..
+   17  cd src/
+   18  ll
+   19  cat INSTALL 
+   20  ./configure --shared
+   21  make depend -j 16
+   22  make -j 16
+   23  cd ../tools/
+   24  cd ../egs/voxforge/s5/
+   25  ll
+   26  vim sample_run.sh 
+   27  ./sample_run.sh 
+   28  vim run.sh 
+   29  ./sample_run.sh 
+   30  vim path.sh 
+   31  ./sample_run.sh 
+   32  vim path.sh 
+   33  ./sample_run.sh 
+   34  vim sample_run.sh 
+   35  ./sample_run.sh 
+   36  cat data/local/dict/vocab-oov.txt 
+   37  cat data/local/dict/lexicon-iv.txt 
+   38  vim sample_run.sh 
+   39  vim local/voxforge_prepare_dict.sh
+   40  ./sample_run.sh 
+   41  ll data/local/
+   42  cat data/local/lm.arpa 
+   43* 
+   44  ./sample_run.sh 
+   45  ll data/local/dict/
+   46  cat data/local/dict/cmudict-plain.txt 
+   47  clear
+   48  cat data/local/dict/lexicon-oov.txt 
+   49  cat data/local/dict/silence_phones.txt 
+   50  cat data/local/dict/optional_silence.txt 
+   51  cat data/local/dict/nonsilence_phones.txt 
+   52  vim run.sh
+   53  ./sample_run.sh 
+   54  cat data/lang/L.fst
+   55  cat data/lang/L_disambig.fst 
+   56  clear
+   57  vim run.sh 
+   58  cat exp/make_mfcc/train/q/make_mfcc_train.log
+   59  vim path.sh 
+   60  vim cmd.sh 
+   61  ./sample_run.sh 
+   62  vim run.sh 
+   63  history > cmds_1.txt

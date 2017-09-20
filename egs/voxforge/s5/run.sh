@@ -21,7 +21,7 @@
 
 # The number of parallel jobs to be started for some parts of the recipe
 # Make sure you have enough resources(CPUs and RAM) to accomodate this number of jobs
-njobs=2
+njobs=10
 
 # This recipe can select subsets of VoxForge's data based on the "Pronunciation dialect"
 # field in VF's etc/README files. To select all dialects, set this to "English"
